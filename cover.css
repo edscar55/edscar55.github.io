@@ -24,10 +24,10 @@ body {
   /* background-image: url("Images/luminarEdit.jpg"); */
   /* set background color bg dark bootstrap */
   background-color: #f0eae4;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: local;
 }
 
 
