@@ -16,7 +16,7 @@
  */
 .bg-image{
     /* The image used */
-  background-image: url("Images/Background.jpg");
+  background-image: url("Images/Misc/Background.jpg");
 
   /* Add the blur effect */
   filter: blur(8px);
@@ -35,7 +35,7 @@
 body {
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   /*background-color: #fdf8e3;*/
- background-image: url("Images/Background.jpg");
+ background-image: url("Images/Misc/Background.jpg");
  background-size: cover;
  background-position: center;
  background-color: #cccccc;
@@ -99,4 +99,9 @@ h3 {
 
 p {
   color: #fff;
+}
+
+h1 {
+  color: #fff;
+  
 }
