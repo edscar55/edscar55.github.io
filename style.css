@@ -14,35 +14,21 @@
 /* 
  * Base structure
 */
-.bg-image{
-    /* The image used */
-  background-image: url("Images/Misc/Background_small.jpg");
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 body {
  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
- background-image: url("Images/Misc/Background_small.jpg");
- transform: translate3d(0,0,1px); 
- backface-visibility: hidden;
+ 
+ background-image: url("Images/Misc/Background.jpg");
  background-size: cover;
  background-position: center;
  height: 100vh;
  margin: 0;
  background-repeat: no-repeat;
  background-attachment: fixed;
+
+ transform: translate3d(0,0,1px); 
+ backface-visibility: hidden;
+ 
 }
 
 .cover-container {
@@ -73,15 +59,13 @@ h3 {
   text-shadow: 0px 4px 4px #282828;
 }
 
-p {
-  color: #fff;
-}
+/* small cursive*/
 
-h1 {
-  color: #fff;
-  
+h2 {
+  font-family: "WindSong", cursive;
+  font-size: 1.5rem;
+  text-shadow: 0px 4px 4px #282828;
 }
-
 
 /*
  * Header
@@ -118,3 +102,20 @@ h1 {
   border-bottom-color: #fff;
 }
 
+.main-link {
+  &:hover {
+    transform: translateY(-10px);
+
+    h2 {
+      color: #ff8a00;
+    }
+  }
+
+  &:focus-within {
+    box-shadow: 0 0 0 0.25rem;
+  }
+
+  &:focus-within a:focus {
+    text-decoration: none;
+  }
+}
