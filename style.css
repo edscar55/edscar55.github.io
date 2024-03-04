@@ -33,12 +33,12 @@
 }
 
 body {
-  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-  /*background-color: #fdf8e3;*/
+ text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
  background-image: url("Images/Misc/Background_small.jpg");
+ transform: translate3d(0,0,1px); 
+ backface-visibility: hidden;
  background-size: cover;
  background-position: center;
- background-color: #cccccc;
  height: 100vh;
  margin: 0;
  background-repeat: no-repeat;
@@ -67,7 +67,7 @@ body {
 h3 {
   color: rgb(255, 255, 255);
   font-family: "WindSong", cursive;
-  font-size: 8vw;
+  font-size: 4vw;
   /*font-size: 225%;*/
   /*  font-size: 3em;*/
   text-shadow: 0px 4px 4px #282828;
@@ -90,7 +90,7 @@ h1 {
 /* Nav Default Buttons*/
 .nav-masthead .nav-link {
   padding: 0.25rem 0;
-  font-size:2vw;
+  font-size:1vw;
   /*font-size: 1.125rem;*/
   font-weight: 500;
   font-style: oblique;
