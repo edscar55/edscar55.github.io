@@ -17,7 +17,7 @@
 
 body {
  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
- 
+ color: #fff;
  background-image: url("Images/Misc/Background.jpg");
  background-size: cover;
  background-position: center;
@@ -29,10 +29,6 @@ body {
  transform: translate3d(0,0,1px); 
  backface-visibility: hidden;
  
-}
-
-.cover-container {
-  max-width: 100em;
 }
 
 .bd-placeholder-img {
@@ -49,7 +45,8 @@ body {
   }
 }
 
-/* cursive text*/
+
+/* Large Cursive*/
 h3 {
   color: rgb(255, 255, 255);
   font-family: "WindSong", cursive;
@@ -59,19 +56,17 @@ h3 {
   text-shadow: 0px 4px 4px #282828;
 }
 
-/* small cursive*/
-
+/* Medium Cursive*/
 h2 {
   font-family: "WindSong", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Small Cursive*/
+h4 {
+  font-family: "WindSong", cursive;
   font-size: 1rem;
-}
-
-h1 {
-  color: #fff;
-}
-
-p {
-  color: #fff;
 }
 
 a:hover, a:visited, a:link, a:active
