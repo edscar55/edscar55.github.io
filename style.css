@@ -16,19 +16,19 @@
 */
 
 body {
- text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
- color: #fff;
- background-image: url("Images/Misc/Background.jpg");
- background-size: cover;
- background-position: center;
- height: 100vh;
- margin: 0;
- background-repeat: no-repeat;
- background-attachment: fixed;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background-image: url("Images/Misc/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
- transform: translate3d(0,0,1px); 
- backface-visibility: hidden;
- 
+  transform: translate3d(0, 0, 1px);
+  backface-visibility: hidden;
+
 }
 
 .bd-placeholder-img {
@@ -46,7 +46,7 @@ body {
 }
 
 
-/* Large Cursive*/
+/* Large Cursive *homepage* */
 h3 {
   color: rgb(255, 255, 255);
   font-family: "WindSong", cursive;
@@ -56,22 +56,32 @@ h3 {
   text-shadow: 0px 4px 4px #282828;
 }
 
-/* Medium Cursive*/
+/* Medium Cursive *Headers* */
 h2 {
   font-family: "WindSong", cursive;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* Small Cursive*/
+/* Small Cursive *cursive info* */
 h4 {
   font-family: "WindSong", cursive;
   font-size: 1rem;
 }
 
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
+/* Small Block letters *Header* */
+h5 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-style: oblique;
+  color: #fff;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
 }
 
 
@@ -101,7 +111,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 /* ???*/
-.nav-masthead .nav-link + .nav-link {
+.nav-masthead .nav-link+.nav-link {
   margin-left: 1rem;
 }
 
@@ -130,60 +140,66 @@ a:hover, a:visited, a:link, a:active
 }
 
 .timeline {
-	width:800px;
-	height: 20px;
-	list-style: none;
-	text-align: justify;
-	margin: 80px auto;
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(45%, rgba(255,255,255,0)), color-stop(51%, rgba(191,128,11,1)), color-stop(57%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgba(191,128,11,1) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+  width: 800px;
+  height: 20px;
+  list-style: none;
+  text-align: justify;
+  margin: 80px auto;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(45%, rgba(255, 255, 255, 0)), color-stop(51%, rgba(191, 128, 11, 1)), color-stop(57%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(191, 128, 11, 1) 51%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
 }
 
-.timeline:after {display: inline-block; content: ""; width: 100%;}
+.timeline:after {
+  display: inline-block;
+  content: "";
+  width: 100%;
+}
 
 .timeline li {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background: #F2BB13;
-	text-align: center;
-	line-height: 1.2;
-	position: relative;
-	border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #F2BB13;
+  text-align: center;
+  line-height: 1.2;
+  position: relative;
+  border-radius: 50%;
 }
 
 .timeline li:before {
-	display: inline-block;
-	content: attr(data-year);
-	font-size: 26px;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+  display: inline-block;
+  content: attr(data-year);
+  font-size: 26px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .timeline li:nth-child(odd):before {
-	top: -40px;
+  top: -40px;
 }
+
 .timeline li:nth-child(even):before {
-	bottom: -40px;
+  bottom: -40px;
 }
 
 .timeline li:after {
-	display: inline-block;
-	content: attr(data-text);
-	font-size: 16px;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+  display: inline-block;
+  content: attr(data-text);
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .timeline li:nth-child(odd):after {
-	bottom: 0;
-	margin-bottom: -10px;
-	transform: translate(-50%, 100%);
+  bottom: 0;
+  margin-bottom: -10px;
+  transform: translate(-50%, 100%);
 }
+
 .timeline li:nth-child(even):after {
-	top: 0;
-	margin-top: -10px;
-	transform: translate(-50%, -100%);
+  top: 0;
+  margin-top: -10px;
+  transform: translate(-50%, -100%);
 }
